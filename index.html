@@ -3,65 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Headings */
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            color: #0056b3; /* A nice blue for the main title */
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #34495e;
+            margin-top: 30px;
+        }
+
+        /* Paragraphs */
+        p {
+            margin-bottom: 1em;
+            font-size: 1.1em;
+        }
+
+        /* Images */
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+            max-width: 100%; /* Ensures images are responsive */
+            height: auto;
+        }
+
+        /* Specific image styling for HicTech Logo */
+        img[alt="HicTech Logo"] {
+            width: 120px;
+            height: auto;
+            margin-top: 0; /* Adjust as needed */
+        }
+
+        /* Links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Lists */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '➤'; /* Custom bullet point */
+            color: #007bff;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Horizontal Rule */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 40px 0;
+        }
+
+        /* Strong/Bold text */
+        b {
+            color: #0056b3; /* Highlight important names */
+        }
+
+        /* Small correction for the "My" tag, assuming it was meant to be a div or section */
+        /* Since "My" is not a standard HTML tag, I'm targeting its content if it were wrapped in a div.
+           For this styling, I'm assuming it was a typo and removing the <My> and </My> tags
+           to ensure valid HTML and applying styling to the content directly.
+           If you intended it to be a custom element, you'd need JavaScript to define it.
+        */
+    </style>
 </head>
 <body>
-    <title>My Portfolio</title>
-    <h1>My Portfolio</h1>
-    <img src="HicTech Logo.png" alt="HicTech Logo" style="width: 120px; height: auto;">
-    <h2>About Me</h2>
-    <p>Welcome! I'm <b>Ifeanyi Otegbulu</b>, a passionate freelance website designer and SEO expert dedicated to helping 
-        businesses thrive online. In today's digital landscape, a strong online presence isn't just an advantage—it's a necessity. 
-        I combine cutting-edge design with powerful search engine optimization strategies to build websites that 
-        don't just look great, but truly perform.</p>
-        <img src="HicTech Banner.png" alt="HicTech Banner" style="width: 100%; height: auto;">
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <img src="HicTech Logo.png" alt="HicTech Logo">
+        
+        <h2>About Me</h2>
+        <p>Welcome! I'm <b>Ifeanyi Otegbulu</b>, a passionate freelance website designer and SEO expert dedicated to helping businesses thrive online. In today's digital landscape, a strong online presence isn't just an advantage—it's a necessity. I combine cutting-edge design with powerful search engine optimization strategies to build websites that don't just look great, but truly perform.</p>
+        <img src="HicTech Banner.png" alt="HicTech Banner">
 
-    <h2>My Approach</h2>
-    <p>Where Design Meets Visibility
-        I believe a website should be more than just an online brochure; it should be a dynamic tool that drives 
-        engagement and delivers measurable results. My approach is holistic, focusing on two key pillars:
-    </p>
-    <h3>Bespoke Website Design</h3>
-    <p>I create visually stunning, user-friendly, and responsive websites tailored to your unique brand and business 
-    goals. From concept to launch, I ensure your website provides an exceptional user experience across all devices. My de
-    signs are not only aesthetically pleasing but also intuitively navigable, guiding your visitors towards 
-    conversion.</p>
-    <br>
-    <h3>Strategic SEO Optimization</h3>
-    <p>Even the most beautiful website won't succeed if it can't be found. As an SEO expert, I implement comprehensive 
-        strategies to boost your website's visibility on search engines like Google. This includes meticulous keyword 
-        research, on-page optimization, technical SEO, and content strategies designed to attract organic 
-        traffic and establish your authority in your industry.</p>
-    <h2>Services</h2>
-    <My>
+        <h2>My Approach</h2>
+        <p>Where Design Meets Visibility</p>
+        <p> A website should be more than just an online brochure; it should be a dynamic tool that drives engagement and delivers measurable results. My approach is holistic, focusing on two key pillars:</p>
+        
+        <h3>Bespoke Website Design</h3>
+        <p>I create visually stunning, user-friendly, and responsive websites tailored to your unique brand and business goals. From concept to launch, I ensure your website provides an exceptional user experience across all devices. My designs are not only aesthetically pleasing but also intuitively navigable, guiding your visitors towards conversion.</p>
+        
+        <h3>Strategic SEO Optimization</h3>
+        <p>Even the most beautiful website won't succeed if it can't be found. As an SEO expert, I implement comprehensive strategies to boost your website's visibility on search engines like Google. This includes meticulous keyword research, on-page optimization, technical SEO, and content strategies designed to attract organic traffic and establish your authority in your industry.</p>
+        
+        <h2>Services</h2>
         <h3>Custom Website Design & Development</h3>
         <p>From sleek informational sites to robust e-commerce platforms, I build websites that convert.</p>
         
         <h3>Website Redesign</h3>
-        <p>Give your outdated website a fresh look and improved functionality to better serve your current business needs.</p>
+        <p>Give your outdated website a fresh look and improved functionality to serve your current business needs better.</p>
         
         <h3>Search Engine Optimization (SEO)</h3>
-        <p>Worked on optimizing a blog for search engines, improving its visibility and increasing organic traffic through targeted keywords and content strategies.</p>
+        <p>Worked on optimising a blog for search engines, improving its visibility and increasing organic traffic through targeted keywords and content strategies.</p>
+        
         <h3>Responsive Design</h3>
-        <P>Ensure your website looks and functions perfectly on desktops, tablets, and mobile devices.</P>
+        <p>Ensure your website looks and functions perfectly on desktops, tablets, and mobile devices.</p>
+        
         <h3>Website Maintenance & Support</h3>
         <p>Keep your website running smoothly and securely with ongoing support and updates.</p>
-    </My>
-    <h2>Why Choose Me?</h2>
-    <p>With a proven track record of delivering high-quality websites that not only look great but also perform exceptionally, 
-        I am committed to your success. My clients appreciate my attention to detail, transparent communication, and dedication 
-        to achieving their goals. Whether you're a small business looking to establish your online presence or a larger company 
-        seeking to enhance your digital footprint, I have the expertise to help you succeed.</p>
+        
+        <h2>Why Choose Me?</h2>
+        <p>With a proven track record of delivering high-quality websites that not only look great but also perform exceptionally, I am committed to your success. My clients appreciate my attention to detail, transparent communication, and dedication to achieving their goals. Whether you're a small business looking to establish your online presence or a larger company seeking to enhance your digital footprint, I have the expertise to help you succeed.</p>
         <hr>
-    <h2>Get in Touch</h2>
-    <p>Ready to take your online presence to the next level? Let's connect! You can reach me at:</p>
-   
-    <br>
-    <h3>A glance of some of the websites I have worked on</h3>
-    <ul>
-        <li><a href="https://sealwhyte.com/">Seal Whyte Energy Services</a></li>
-        <li><a href="https://xquizitcollections.com.ng/">Xquizit Collections</a></li>
-        <li><a href="https://irishconceptsengineering.com/">Irish Concept Engineering Services</a></li>
-        <li><a href="https://westfieldfarmslimited.com.ng/">Westfield Farms Limited</a></li>
-        <li><a href="https://tedihealthcenter.com/">TEDI Health Center</a></li>
-    </ul>
+        
+        <h2>Get in Touch</h2>
+        <p>Ready to take your online presence to the next level? Let's connect! You can reach me on 09012757594:</p>
+        
+        <h3>A glance at some of the websites I have worked on</h3>
+        <ul>
+            <li><a href="https://sealwhyte.com/">Seal Whyte Energy Services</a></li>
+            <li><a href="https://xquizitcollections.com.ng/">Xquizit Collections</a></li>
+            <li><a href="https://irishconceptsengineering.com/">Irish Concept Engineering Services</a></li>
+            <li><a href="https://westfieldfarmslimited.com.ng/">Westfield Farms Limited</a></li>
+            <li><a href="https://tedihealthcenter.com/">TEDI Health Center</a></li>
+        </ul>
+    </div>
 </body>
+</html>
